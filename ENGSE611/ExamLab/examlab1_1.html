@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightgrey">
+    <table border="0" align="center" width="50%"  cellspacing="10" cellpadding="5" bgcolor="white">
+        <tr>
+            <th align="left">สมัคร</th>
+            <th align="right">X</th>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">
+                <p style="font-size: 30%;">ง่ายและเร็ว</p>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="1">
+                <form action="/submit_exam" method="post" >
+                    <div>
+                        <input placeholder="ชื่อ" width="50%" type="text" id="fullname" name="fullname" required>
+                    </div>
+            </td>
+            <td>
+                <div>
+                    <form action="/submit_exam" method="post" >
+                        <div>
+                            <input  placeholder="นามสกุล" width="100px" type="text" id="email" name="email" required><br>
+                        </div>
+                </div>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div>
+                    <input placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล" width="100%" type="password" id="password" name="password" style="width: 80%;" required><br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>
+                    <input placeholder="รหัสผ่านใหม่" width="50%" type="password" id="confirm_password" name="confirm_password" style="width: 80%;" required>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div>
+                    <label for="birthdate">วันเกิด</label><br>
+                    <select id="birthdate" name="birthdate" required>
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day">8</option>
+                        <option value="day">9</option>
+                        <option value="day">10</option>
+                        <option value="day">11</option>
+                        <option value="day">12</option>
+                        <option value="day">13</option>
+                        <option value="day">14</option>
+                        <option value="day">15</option>
+                        <option value="day">16</option>
+                        <option value="day">17</option>
+                        <option value="day">18</option>
+                        <option value="day">19</option>
+                        <option value="day">20</option>
+                        <option value="day">21</option>
+                        <option value="day">22</option>
+                        <option value="day">23</option>
+                        <option value="day">24</option>
+                        <option value="day">25</option>
+                        <option value="day">26</option>
+                        <option value="day">27</option>
+                        <option value="day">28</option>
+                        <option value="day">29</option>
+                        <option value="day">30</option>
+                        <option value="day">31</option>
+                    </select>
+
+                    <select id="birthmonth" name="birthmonth" required>
+                        <option value="month">มกราคม</option>
+                        <option value="month">กุมภาพันธ์</option>
+                        <option value="month">มีนาคม</option>
+                        <option value="month">เมษายน</option>
+                        <option value="month">พฤษภาคม</option>
+                        <option value="month">มิถุนายน</option>
+                        <option value="month">กรกฎาคม</option>
+                        <option value="month">สิงหาคม</option>
+                        <option value="month">กันยายน</option>
+                        <option value="month">ตุลาคม</option>
+                        <option value="month">พฤศจิกายน</option>
+                        <option value="month">ธันวาคม</option>
+                    </select>
+
+                    <select id="birthyear" name="birthyear" required>
+                        <option value="year">2024</option>
+                        <option value="year">2023</option>
+                        <option value="year">2022</option>
+                        <option value="year">2021</option>
+                        <option value="year">2020</option>
+                        <option value="year">2019</option>
+                        <option value="year">2018</option>
+                        <option value="year">2017</option>
+                        <option value="year">2016</option>
+                        <option value="year">2015</option>
+                        <option value="year">2014</option>
+                        <option value="year">2013</option>
+                        <option value="year">2012</option>
+                        <option value="year">2011</option>
+                        <option value="year">2010</option>
+                        <option value="year">2009</option>
+                        <option value="year">2008</option>
+                        <option value="year">2007</option>
+                        <option value="year">2006</option>
+                        <option value="year">2005</option>
+                        <option value="year">2004</option>
+                        <option value="year">2003</option>
+                        <option value="year">2002</option>
+                        <option value="year">2001</option>
+                        <option value="year">2000</option>
+                    </select>
+                </div>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <div>
+                    <label for="birthdate">เพศ</label><br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <table border="1" cellpadding="4" cellspacing="0" frame="box" rules="none" width="100%" height="50%">
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female" required>  หญิง<br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td colspan="1">
+                <table border="1" cellpadding="4" cellspacing="0" frame="box" rules="none" width="100%" height="50%">
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male" required>  ชาย<br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <p style="font-size: 12px;">เมื่อคลิก "สมัคร" แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และ นโยบายคุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง</p>
+            </td>
+        </tr>
+
+        <tr bgcolor="darkgreen">
+            <td colspan="2" align="center">
+                <button type="submit" width="10%;" height="10%;">สมัคร</button>
+            </td>
+        </tr>
+                </form>
+            </td>
+        </tr>
+    </table>
+    </table>
+</body>
+</html>
