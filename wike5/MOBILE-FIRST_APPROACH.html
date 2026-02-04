@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    main {
+        padding: 15px;
+    }
+
+    .card {
+        background: #f4f4f4;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        background: #f4f4f4;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+        header {
+            text-align: left;
+            padding: 20px;
+            background-color: rgb(175, 228, 106);
+        }
+
+        nav {
+            flex-direction: row;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 30px 40px;
+            background-color: rgb(60, 199, 254);
+        }
+        main{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Mobile-first approach</h1>
+        <p>เริ่มออกจากระบบมือถือ แล้วค่อยขยายไปสูจอใหญ่</p>
+
+        <nav>
+            <a href="#">Home 🏠</a>
+            <a href="#">About 💁</a>
+            <a href="#">Contact 📞</a>
+            <a href="#">Blog 📰</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h3>แนวคิด</h3>
+            <p>การออกแบบเว็บไซต์โดยเริ่มต้นจากการออกแบบสำหรับอุปกรณ์เคลื่อนที่ (มือถือ) ก่อน แล้วจึงขยายไปยังอุปกรณ์ที่มีหน้าจอใหญ่ขึ้น เช่น แท็บเล็ตและเดสก์ท็อป</p>
+        </div>
+
+        <div class="card">
+            <h3>ข้อดี</h3>
+            <ul>
+                <li>ประสบการณ์ผู้ใช้ที่ดีขึ้นบนมือถือ</li>
+                <li>การโหลดหน้าเว็บที่รวดเร็วขึ้น</li>
+                <li>การจัดการเนื้อหาที่มีประสิทธิภาพ</li>
+            </ul>
+        </div>
+
+        <div class="card"> 
+            <h3>การใช้งานจริง</h3>
+            <p>ใช้ CSS media queries เพื่อปรับแต่งการแสดงผลตามขนาดหน้าจอ เช่น การเปลี่ยนแปลงเลย์เอาต์ การปรับขนาดภาพ และการซ่อน/แสดงเนื้อหาบางส่วน</p>
+        </div>
+    </main>
+
+    <img src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?auto=webp&width=3840&quality=75&fit=cover" alt="Mobile First Design">
+
+    <footer>
+        <p>&copy; รายวิขา ENGSE661 การพัฒนาเว็บไซต์โดยเทคโนโลยีสมัยใหม่</p>
+    </footer>
+</body>
+</html>
