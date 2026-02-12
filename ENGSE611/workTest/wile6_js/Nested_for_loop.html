@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="run-btn" onclick="runDemo()"> run Bubble Sort</button>
+    <div id="outputBox" style="white-space:pre-wrap;margin-top:12px;"></div>
+    <script>
+        function runDemo() {
+            let numbers = [30, 27, 84, 36, 24, 2, 74, 37, 8, 50];
+            let n = numbers.length;
+            const original = numbers.slice();
+
+            console.clear();
+            console.log("Bubble sort running...");
+            console.log("Original :", original.join(" "));
+
+            for (let i = 0; i < n - 1; i++) {
+                for (let j = 0; j < n - i - 1; j++) {
+
+                    console.log(`Comparing ${numbers[j]} and ${numbers[j + 1]}`);
+
+                    if (numbers[j] > numbers[j + 1]) {
+                        console.log(`Swapping ${numbers[j]} and ${numbers[j + 1]}`);
+                        
+                        let temp = numbers[j];
+                        numbers[j] = numbers[j + 1];
+                        numbers[j + 1] = temp;
+                    }
+                }
+            }
+            document.getElementById("outputBox").innerHTML = "<strong>Output:</strong>\n\nOriginal: " + original.join(" ") + "\nSorted: " + numbers.join(" ");
+            console.log("Sorted :", numbers.join(" "));
+        }
+    </script>
+</body>
+</html>

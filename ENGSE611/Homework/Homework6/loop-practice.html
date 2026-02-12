@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            padding: 25px;
+            background: #f7f7f7;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #0078ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+
+        #outputBox {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+            min-height: 260px;
+            border-left: 5px solid #00c853;
+            font-family: Consolas, monospace;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="damo()">Run Code</button><br>
+    <div id="outputBox">รอดำเนินการ.....</div>
+
+    <script>
+        function damo() {
+            let maxNumber = 15;
+            let output = [];
+
+            for (let i = 0; i <= maxNumber; i++) {
+                if (i % 2 == 0 && i >= 0) {
+                    output.push(i + " (คู่)\n");
+                    console.log(i + " (คู่)");
+                } else if (i % 2 != 0 && i >= 0) {
+                    output.push(i + " (คี่)\n");
+                    console.log(i + " (คี่)");
+                } else {
+                    output.push(i + " ไม่จัดอยู่ในประเภทเลขคู่หรือเลขคี่\n");
+                    console.log(i + " ไม่จัดอยู่ในประเภทเลขคู่หรือเลขคี่");
+                }
+            }
+
+            for (let j = 0; j <= 10; j += 2) {
+                output.push("นับทีละ 2: " + j + "\n");
+                console.log("นับทีละ 2: " + j);
+            }
+
+            for (let k = 10; k >= 0; k--) {
+                output.push("ถอยหลัง :"+ k + "\n");
+                console.log(k); 
+            }
+
+            document.getElementById("outputBox").textContent = output.join("");
+        }
+    </script>
+</body>
+</html>
