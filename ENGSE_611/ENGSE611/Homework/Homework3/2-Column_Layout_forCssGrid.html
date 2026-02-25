@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 70px 1fr; 
+        gap: 0;
+        padding: 0;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    header {
+        grid-column: 1 / -1;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 21px;
+    }
+
+    aside {
+        background-color: rgb(6, 131, 255);
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    main {
+        background-color: rgb(225, 225, 225);
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            height: auto;
+        }
+
+        aside, main {
+            grid-column: 1 / -1;
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <header><h1>โจรย์ที่ 2 : 2-Column Layout ด้วย CSS Grid</h1></header>
+        <aside>
+            <div>เมนู</div><br>
+            <div>About</div><br>
+            <div>Services</div><br>
+            <div>Contact</div><br>
+        </aside>
+        <main>
+            <div>
+                <h1>ยินดีต้อนรับ</h1>
+                <p>นี่คือส่วนเนื้อหาหลักของหน้าเว็บ</p>
+                <p>ลองทดสอบย่อ-ขยายหน้าจอเพื่อดู Responsive Layout</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

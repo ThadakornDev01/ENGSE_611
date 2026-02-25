@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --padding: 16px;
+        --bg-colorv: #fdfdfd;
+        --card-bg: #abeaf6;
+        --text-color: #000000;
+    }
+
+    @media (max-width: 768px) {
+        :root {
+            --padding: 32px;
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: tahoma, sans-serif;
+        background: var(--bg-colorv);
+        color: var(--text-color);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--padding);
+    }
+
+    .card {
+        background: var(--card-bg);
+        padding: var(--padding);
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: clamp(1.6rem, 2.5vw, 2.8rem);
+        margin-top: 0;
+    }
+
+    p {
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+        line-height: 1.6;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Modern CSS Features</h1>
+            <p>
+                Modern CSS has introduced a variety of features that enhance web design and development. These features include CSS Grid, Flexbox, custom properties 
+                (CSS variables), and media queries for responsive design. They allow developers to create complex layouts, ensure consistency across designs, and adapt 
+                to different screen sizes with ease.
+            </p>
+
+            <p>
+                CSS Grid provides a two-dimensional layout system, enabling the creation of grid-based designs. Flexbox offers a one-dimensional layout model for arranging 
+                items in rows or columns. Custom properties allow for reusable values throughout the stylesheet, improving maintainability. Media queries facilitate responsive 
+                design by applying different styles based on device characteristics such as screen width.
+            </p>
+
+            <p>
+                1914 translation by H. Rackham
+                "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound 
+                the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
+                but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires 
+                to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, 
+                which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure 
+                that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+            </p>
+        </div>
+</body>
+</html>
